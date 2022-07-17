@@ -19,7 +19,7 @@ app.use(errorHandler);
 
 // Routes...
 const categoriesRoutes = require('./routers/categories');
-const ordersRoutes = require('./routers/categories')
+const ordersRoutes = require('./routers/orders')
 const productsRoutes = require('./routers/products')
 const usersRoutes = require('./routers/users')
 

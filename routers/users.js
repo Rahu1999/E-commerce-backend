@@ -96,13 +96,12 @@ router.post('/login', async (req,res)=>{
             secret,
             {expiresIn: '1d'}   //1d for oane day  &  1w for one week
         )
-
-        res.status(200).send({user: user.email, token: token});
+     return   res.status(200).send({user: user.email, token: token});
     }else{
-        res.status(404).send('password is wrong!!')
+          res.status(404).send('password is wrong!!')
     }
     
-    return res.status(200).send(user);
+   
 })
 
 router.post(`/register`,async (req,res)=>{
